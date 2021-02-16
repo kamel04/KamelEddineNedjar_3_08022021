@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood Accueil</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f17c906855.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <!--Entête-->
+    <header class="header">
+      <h1 class="logo">ohmyfood</h1>
+    </header>
+    <main>
+      <!--Exploration-->
+      <section class="exploration">
+        <!--Localisation-->
+        <div class="localisation">
+          <i class="fas fa-map-marker-alt local-icon"></i>
+          <span class="loca-text">Paris, Belleville</span>
+        </div>
+        <!--Réserver-->
+        <div class="reserver">
+          <h2 class="reserver-titre">Réservez le menu qui vous convient</h2>
+          <p class="reserver-text">
+            Découvrez des restaurents d'exception séléctionnés par nos soins
+          </p>
+          <button class="reserver-btn">Explorer nos restaurents</button>
+        </div>
+        <!--Fonctionnement-->
+        <div class="fonctionnement">
+          <h2 class="foctionnement-titre">Fonctionnement</h2>
+          <ol class="fonctionnement-etapes">
+            <li class="fonctionnement-etape">
+              <i class="fas fa-mobile-alt etape-icon"></i>
+              <span class="etape-text">Choisissez un restaurent</span>
+            </li>
+            <li class="fonctionnement-etape">
+              <i class="fas fa-list-ul etape-icon"></i>
+              <span class="etape-text">Composez votre menu</span>
+            </li>
+            <li class="fonctionnement-etape">
+              <i class="fas fa-store etape-icone"></i>
+              <span class="etape-text">Dégustez au restaurent</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!--Restaurants-->
+      <section class="restaurents">
+        <h2 class="restaurents-titre">Restaurents</h2>
+        <div class="cartes">
+          <a href="la-palette-du-gout.html" class="carte">
+            <img
+              src="public/img/restaurants/la-palette-du-gout.jpg"
+              alt=""
+              class="carte-img"
+              width="300px"
+            />
+            <span class="nouveau">Nouveau</span>
+            <div class="carte-infos">
+              <div class="carte-info-texte">
+                <h3 class="carte-info-titre">La palette du goût</h3>
+                <p class="carte-info-quartier">Ménilmontant</p>
+              </div>
+              <div class="carte-info-coeur">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="la-note-enchantee.html" class="carte">
+            <img
+              src="public/img/restaurants/la-note-enchantee.jpg"
+              alt=""
+              class="carte-img"
+              width="300px"
+            />
+            <span class="nouveau">Nouveau</span>
+            <div class="carte-infos">
+              <div class="carte-info-texte">
+                <h3 class="carte-info-titre">La note enchantée</h3>
+                <p class="carte-info-quartier">Charonne</p>
+              </div>
+              <div class="carte-info-coeur">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </a>
+          <a href="a-la-francaise.html" class="carte">
+            <img
+              src="public/img/restaurants/a-la-francaise.jpg"
+              alt=""
+              class="carte-img"
+              width="300px"
+            />
+            <div class="carte-infos">
+              <div class="carte-info-texte">
+                <h3 class="carte-info-titre">À la française</h3>
+                <p class="carte-info-quartier">Cité Rouge</p>
+              </div>
+              <div class="carte-info-coeur">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </a>
+          <a href="le-delice-des-sens.html" class="carte">
+            <img
+              src="public/img/restaurants/le-delice-des-sens.jpg"
+              alt=""
+              class="carte-img"
+              width="300px"
+            />
+            <div class="carte-infos">
+              <div class="carte-info-texte">
+                <h3 class="carte-info-titre">Le délice des sens</h3>
+                <p class="carte-info-quartier">Folie-Méricourt</p>
+              </div>
+              <div class="carte-info-coeur">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+      <h3 class="logo-footer">ohmyfood</h3>
+      <a href="#" class="footer-lien">
+        <i class="fas fa-utensils footer-icon"></i>
+        <span class="footer-text">Proposer un restaurent</span>
+      </a>
+      <a href="#" class="footer-lien">
+        <i class="fas fa-utensils footer-icon"></i>
+        <span class="footer-text">Devenir partenaire</span>
+      </a>
+      <a href="#" class="footer-text">Mentions légales</a>
+      <a href="#" class="footer-text">Contact</a>
+    </footer>
+  </body>
+</html>

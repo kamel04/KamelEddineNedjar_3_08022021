@@ -1,0 +1,23 @@
+{
+  "name": "kameleddinenedjar_3_08022021",
+  "version": "1.0.0",
+  "description": "Projet 3 ohmyfood",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.32.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamel04/https---github.com-kamel04-KamelEddineNedjar_3_08022021.git"
+  },
+  "author": "Kamel Nedjar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamel04/https---github.com-kamel04-KamelEddineNedjar_3_08022021/issues"
+  },
+  "homepage": "https://github.com/kamel04/https---github.com-kamel04-KamelEddineNedjar_3_08022021#readme"
+}
