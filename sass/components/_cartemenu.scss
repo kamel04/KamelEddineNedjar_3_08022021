@@ -1,0 +1,53 @@
+.plat {
+  @include cartemenu;
+  @include boxshadow;
+
+  &-contenu {
+    flex: 1;
+    @include textcache;
+  }
+
+  &-titre {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    @include textcache;
+  }
+  &-text {
+    font-size: 1rem;
+    font-weight: 300;
+    @include textcache;
+  }
+
+  &-prix {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: 700;
+    margin-right: 1rem;
+  }
+  &-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    margin-right: -5rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    background-color: #99e2d0;
+    transition-duration: 0.5s;
+  }
+  &:hover &-select {
+    margin-right: -1rem;
+  }
+
+  &-icon {
+    color: white;
+    font-size: 1.4rem;
+    transform: rotate(0);
+    transition-duration: 0.5s;
+  }
+  &:hover &-icon {
+    transform: rotate(360deg);
+  }
+}

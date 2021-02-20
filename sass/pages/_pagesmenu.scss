@@ -1,0 +1,58 @@
+.menu {
+  &-img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    margin-top: -3rem;
+    position: relative;
+    &-titre {
+      font-family: "Shrikhand";
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+}
+.menu-listes {
+  display: grid;
+  background-color: #f6f6f6;
+  padding-top: 0.5rem;
+}
+.menu-liste {
+  padding-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  overflow: hidden;
+  &-titre {
+    padding-left: 0.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+    position: relative;
+    &::after {
+      content: "";
+      width: 2.5rem;
+      height: 0.19rem;
+      background-color: #99e2d0;
+      position: absolute;
+      left: 0.5rem;
+      bottom: -0.4rem;
+    }
+  }
+}
+
+.commander {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}

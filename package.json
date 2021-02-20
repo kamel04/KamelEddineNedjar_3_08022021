@@ -4,6 +4,7 @@
   "description": "Projet 3 ohmyfood",
   "main": "index.js",
   "dependencies": {
+    "minireset.css": "0.0.7",
     "sass": "^1.32.7"
   },
   "devDependencies": {},

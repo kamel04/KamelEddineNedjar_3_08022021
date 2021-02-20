@@ -19,38 +19,42 @@
   <body>
     <!--Entête-->
     <header class="header">
-      <h1 class="logo">ohmyfood</h1>
+      <h1 class="header-logo">ohmyfood</h1>
     </header>
     <main>
       <!--Exploration-->
       <section class="exploration">
         <!--Localisation-->
         <div class="localisation">
-          <i class="fas fa-map-marker-alt local-icon"></i>
-          <span class="loca-text">Paris, Belleville</span>
+          <i class="fas fa-map-marker-alt localisation-icon"></i>
+          <span class="localisation-text">Paris, Belleville</span>
         </div>
         <!--Réserver-->
         <div class="reserver">
-          <h2 class="reserver-titre">Réservez le menu qui vous convient</h2>
+          <h2 class="reserver-titre">
+            Réservez le menu qui
+            <br />
+            vous convient
+          </h2>
           <p class="reserver-text">
             Découvrez des restaurents d'exception séléctionnés par nos soins
           </p>
-          <button class="reserver-btn">Explorer nos restaurents</button>
+          <button class="btn-primaire">Explorer nos restaurents</button>
         </div>
         <!--Fonctionnement-->
         <div class="fonctionnement">
           <h2 class="foctionnement-titre">Fonctionnement</h2>
           <ol class="fonctionnement-etapes">
             <li class="fonctionnement-etape">
-              <i class="fas fa-mobile-alt etape-icon"></i>
+              <i class="fas fa-mobile-alt fonctionnement-icon"></i>
               <span class="etape-text">Choisissez un restaurent</span>
             </li>
             <li class="fonctionnement-etape">
-              <i class="fas fa-list-ul etape-icon"></i>
+              <i class="fas fa-list-ul fonctionnement-icon"></i>
               <span class="etape-text">Composez votre menu</span>
             </li>
             <li class="fonctionnement-etape">
-              <i class="fas fa-store etape-icone"></i>
+              <i class="fas fa-store fonctionnement-icon"></i>
               <span class="etape-text">Dégustez au restaurent</span>
             </li>
           </ol>
@@ -65,7 +69,6 @@
               src="public/img/restaurants/la-palette-du-gout.jpg"
               alt=""
               class="carte-img"
-              width="300px"
             />
             <span class="nouveau">Nouveau</span>
             <div class="carte-infos">
@@ -73,9 +76,9 @@
                 <h3 class="carte-info-titre">La palette du goût</h3>
                 <p class="carte-info-quartier">Ménilmontant</p>
               </div>
-              <div class="carte-info-coeur">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+              <div class="fa-stack carte-info-coeur">
+                <i class="far fa-heart fa-stack-1x coeur-off"></i>
+                <i class="fas fa-heart fa-stack-2x coeur-on"></i>
               </div>
             </div>
           </a>
@@ -85,7 +88,6 @@
               src="public/img/restaurants/la-note-enchantee.jpg"
               alt=""
               class="carte-img"
-              width="300px"
             />
             <span class="nouveau">Nouveau</span>
             <div class="carte-infos">
@@ -93,9 +95,9 @@
                 <h3 class="carte-info-titre">La note enchantée</h3>
                 <p class="carte-info-quartier">Charonne</p>
               </div>
-              <div class="carte-info-coeur">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+              <div class="fa-stack carte-info-coeur">
+                <i class="far fa-heart fa-stack-1x coeur-off"></i>
+                <i class="fas fa-heart fa-stack-2x coeur-on"></i>
               </div>
             </div>
           </a>
@@ -104,16 +106,15 @@
               src="public/img/restaurants/a-la-francaise.jpg"
               alt=""
               class="carte-img"
-              width="300px"
             />
             <div class="carte-infos">
               <div class="carte-info-texte">
                 <h3 class="carte-info-titre">À la française</h3>
                 <p class="carte-info-quartier">Cité Rouge</p>
               </div>
-              <div class="carte-info-coeur">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+              <div class="fa-stack carte-info-coeur">
+                <i class="far fa-heart fa-stack-1x coeur-off"></i>
+                <i class="fas fa-heart fa-stack-2x coeur-on"></i>
               </div>
             </div>
           </a>
@@ -122,16 +123,15 @@
               src="public/img/restaurants/le-delice-des-sens.jpg"
               alt=""
               class="carte-img"
-              width="300px"
             />
             <div class="carte-infos">
               <div class="carte-info-texte">
                 <h3 class="carte-info-titre">Le délice des sens</h3>
                 <p class="carte-info-quartier">Folie-Méricourt</p>
               </div>
-              <div class="carte-info-coeur">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+              <div class="fa-stack carte-info-coeur">
+                <i class="far fa-heart fa-stack-1x coeur-off"></i>
+                <i class="fas fa-heart fa-stack-2x coeur-on"></i>
               </div>
             </div>
           </a>
@@ -140,17 +140,19 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <h3 class="logo-footer">ohmyfood</h3>
-      <a href="#" class="footer-lien">
-        <i class="fas fa-utensils footer-icon"></i>
-        <span class="footer-text">Proposer un restaurent</span>
-      </a>
-      <a href="#" class="footer-lien">
-        <i class="fas fa-utensils footer-icon"></i>
-        <span class="footer-text">Devenir partenaire</span>
-      </a>
-      <a href="#" class="footer-text">Mentions légales</a>
-      <a href="#" class="footer-text">Contact</a>
+      <div class="footer-liens">
+        <h3 class="footer-logo">ohmyfood</h3>
+        <a href="#" class="footer-lien">
+          <i class="fas fa-utensils footer-icon"></i>
+          <span class="footer-text">Proposer un restaurent</span>
+        </a>
+        <a href="#" class="footer-lien">
+          <i class="fas fa-hands-helping footer-icon2"></i>
+          <span class="footer-text">Devenir partenaire</span>
+        </a>
+        <a href="#" class="footer-text">Mentions légales</a>
+        <a href="mailto:contact@ohmyfood.com" class="footer-text">Contact</a>
+      </div>
     </footer>
   </body>
 </html>

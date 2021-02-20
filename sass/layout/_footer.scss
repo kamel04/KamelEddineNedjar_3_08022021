@@ -1,0 +1,37 @@
+.footer {
+  background-color: #353535;
+
+  &-liens {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 2rem 1.5rem;
+  }
+  &-lien {
+    margin-bottom: 0.6rem;
+  }
+  &-logo {
+    color: #ffffff;
+    font-family: "Shrikhand";
+    font-weight: 300;
+    padding-bottom: 1.5rem;
+  }
+  &-icon {
+    color: #ffffff;
+    font-size: 1rem;
+    padding-right: 0.6rem;
+  }
+  &-icon2 {
+    color: #ffffff;
+    font-size: 0.65rem;
+    padding-right: 0.6rem;
+  }
+
+  &-text {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 0.6rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

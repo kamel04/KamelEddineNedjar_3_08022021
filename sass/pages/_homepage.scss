@@ -1,0 +1,88 @@
+.localisation {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-weight: 500;
+
+  &-text {
+    margin-left: 1rem;
+  }
+}
+
+.reserver {
+  background-color: #faf6fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem 3.5rem 1rem;
+  text-align: center;
+
+  &-text {
+    margin: 0;
+    padding: 0 0 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+
+.fonctionnement {
+  padding: 2rem 1.3rem;
+  &-etapes {
+    display: block;
+    padding: 0;
+    counter-reset: compteur; //creer compteur de liste dans le parent ol
+  }
+  &-etape {
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1.8rem 0rem 1.8rem 2rem;
+    margin: 1.5rem 0 1.5rem 0.8rem;
+    border-radius: 20px;
+    @include boxshadow;
+    font-weight: 500;
+    transition-duration: 0.2s;
+
+    &:hover {
+      background-color: #f5edff;
+
+      i {
+        color: $color-primaire;
+      }
+    }
+
+    &::before {
+      counter-increment: compteur 1; //initialiser le compteur à 1 sur les li
+      content: counter(compteur) " "; //incrementer le compteur
+      background-color: $color-primaire;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      text-align: center;
+      color: white;
+      font-weight: 400;
+      padding-top: 0.2rem;
+      box-sizing: border-box;
+      position: absolute;
+      left: -0.8rem;
+    }
+  }
+  &-icon {
+    color: #7e7e7e;
+    margin-right: 1rem;
+  }
+}
+
+.restaurents {
+  background-color: #f6f6f6;
+  padding: 2rem 1.5rem;
+}
+
+.cartes {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.3rem;
+}
