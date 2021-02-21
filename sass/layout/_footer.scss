@@ -1,5 +1,7 @@
 .footer {
   background-color: #353535;
+  max-width: 1480px;
+  margin: auto;
 
   &-liens {
     display: flex;
@@ -8,12 +10,14 @@
   }
   &-lien {
     margin-bottom: 0.6rem;
+    max-width: 250px;
   }
   &-logo {
     color: #ffffff;
     font-family: "Shrikhand";
     font-weight: 300;
     padding-bottom: 1.5rem;
+    max-width: 250px;
   }
   &-icon {
     color: #ffffff;
@@ -30,6 +34,7 @@
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 0.6rem;
+    max-width: 250px;
     &:hover {
       text-decoration: underline;
     }

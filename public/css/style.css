@@ -54,9 +54,13 @@ body {
   font-family: "Roboto", sans-serif;
   margin: auto;
   box-sizing: border-box;
-  max-width: 1480px;
   text-decoration: none;
   position: relative;
+}
+
+main {
+  max-width: 1480px;
+  margin: auto;
 }
 
 a {
@@ -77,6 +81,7 @@ p {
   padding: 1rem 1.5rem;
   border: none;
   cursor: pointer;
+  outline: none;
   border-radius: 80px;
   min-width: 185px;
   color: white;
@@ -386,6 +391,8 @@ p {
 
 .footer {
   background-color: #353535;
+  max-width: 1480px;
+  margin: auto;
 }
 .footer-liens {
   display: flex;
@@ -394,12 +401,14 @@ p {
 }
 .footer-lien {
   margin-bottom: 0.6rem;
+  max-width: 250px;
 }
 .footer-logo {
   color: #ffffff;
   font-family: "Shrikhand";
   font-weight: 300;
   padding-bottom: 1.5rem;
+  max-width: 250px;
 }
 .footer-icon {
   color: #ffffff;
@@ -415,6 +424,7 @@ p {
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 0.6rem;
+  max-width: 250px;
 }
 .footer-text:hover {
   text-decoration: underline;
