@@ -1,15 +1,22 @@
 .carte {
   @include carterestaurent;
   @include boxshadow;
-  transition-duration: 0.2s;
+
   background-color: white;
+  overflow: hidden;
+
   &-img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     max-height: 175px;
     border-radius: 1rem 1rem 0 0;
+
+    &:hover {
+      animation: img-top 5s alternate ease-out;
+    }
   }
+
   &-infos {
     display: flex;
     align-items: center;
@@ -55,8 +62,8 @@
 }
 
 .fa-stack-2x {
+  cursor: pointer;
   font-size: 1.5rem;
-
   opacity: 0;
   transition-duration: 0.5s;
   &:hover {

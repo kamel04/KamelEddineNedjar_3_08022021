@@ -2,12 +2,61 @@
 /*rgb 147 86 220*/
 /*rgb 255 121 218*/
 /*rgb 153 226 208*/
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes img-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.2) translateY(-30px);
+    transform-origin: top;
+  }
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes loaderlettre {
+  0% {
+    font-size: 2.2rem;
+    text-shadow: 0px 2px 5px #cfcfcf;
+  }
+  80% {
+    font-size: 1rem;
+    text-shadow: none;
+  }
+  100% {
+    font-size: 2rem;
+    text-shadow: 0px 2px 5px #cfcfcf;
+  }
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
   box-sizing: border-box;
   max-width: 1480px;
   text-decoration: none;
+  position: relative;
 }
 
 a {
@@ -47,8 +96,8 @@ p {
   border-radius: 1rem;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
   transition-duration: 0.2s;
-  transition-duration: 0.2s;
   background-color: white;
+  overflow: hidden;
 }
 .carte:hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
@@ -59,6 +108,9 @@ p {
   width: 100%;
   max-height: 175px;
   border-radius: 1rem 1rem 0 0;
+}
+.carte-img:hover {
+  animation: img-top 5s alternate ease-out;
 }
 .carte-infos {
   display: flex;
@@ -101,6 +153,7 @@ p {
 }
 
 .fa-stack-2x {
+  cursor: pointer;
   font-size: 1.5rem;
   opacity: 0;
   transition-duration: 0.5s;
@@ -122,6 +175,9 @@ p {
   overflow: hidden;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
   transition-duration: 0.2s;
+  animation: slide-in-bottom 0.7s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: both;
 }
 .plat:hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
@@ -176,6 +232,135 @@ p {
 }
 .plat:hover .plat-icon {
   transform: rotate(360deg);
+}
+
+.position-0 {
+  animation-delay: 0s;
+}
+
+.position-1 {
+  animation-delay: 0.1s;
+}
+
+.position-2 {
+  animation-delay: 0.2s;
+}
+
+.position-3 {
+  animation-delay: 0.3s;
+}
+
+.position-4 {
+  animation-delay: 0.4s;
+}
+
+.position-5 {
+  animation-delay: 0.5s;
+}
+
+.position-6 {
+  animation-delay: 0.6s;
+}
+
+.position-7 {
+  animation-delay: 0.7s;
+}
+
+.position-8 {
+  animation-delay: 0.8s;
+}
+
+.loader {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  opacity: 1;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 13rem;
+  animation: loader 0.2s 3s both;
+}
+.loader-lettres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lettre {
+  font-family: "shrikhand";
+  font-size: 2rem;
+  animation: loaderlettre 1.3s 10 both;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ordre-1 {
+  animation-delay: 0.1s;
+}
+
+.ordre-2 {
+  animation-delay: 0.2s;
+}
+
+.ordre-3 {
+  animation-delay: 0.3s;
+}
+
+.ordre-4 {
+  animation-delay: 0.4s;
+}
+
+.ordre-5 {
+  animation-delay: 0.5s;
+}
+
+.ordre-6 {
+  animation-delay: 0.6s;
+}
+
+.ordre-7 {
+  animation-delay: 0.7s;
+}
+
+.ordre-8 {
+  animation-delay: 0.8s;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) 10 both;
+  border-color: #99e2d0 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
 }
 
 .header {
@@ -235,12 +420,32 @@ p {
   text-decoration: underline;
 }
 
+@media screen and (min-width: 768px) {
+  .exploration {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .local-explor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 100%;
+  }
+}
+
 .localisation {
   background-color: #eaeaea;
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 1rem 0;
   font-weight: 500;
+  width: 100%;
 }
 .localisation-text {
   margin-left: 1rem;
@@ -252,8 +457,21 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 1rem 3.5rem 1rem;
+  padding: 1.5rem 0.5rem 3.5rem 0.5rem;
   text-align: center;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+  .reserver {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 2.5rem 1rem 4.5rem 1rem;
+  }
+}
+.reserver-titre {
+  margin-bottom: 1rem;
 }
 .reserver-text {
   margin: 0;
@@ -265,10 +483,30 @@ p {
 .fonctionnement {
   padding: 2rem 1.3rem;
 }
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 1rem 1.3rem;
+  }
+}
 .fonctionnement-etapes {
   display: block;
   padding: 0;
   counter-reset: compteur;
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement-etapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
 }
 .fonctionnement-etape {
   background-color: #f6f6f6;
@@ -285,6 +523,13 @@ p {
 }
 .fonctionnement-etape:hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .fonctionnement-etape {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
 }
 .fonctionnement-etape:hover {
   background-color: #f5edff;
@@ -314,13 +559,22 @@ p {
 
 .restaurents {
   background-color: #f6f6f6;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 4rem 1.5rem;
+}
+.restaurents-titre {
+  padding: 1.5rem 0;
 }
 
 .cartes {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .cartes {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
 }
 
 .menu-img {
@@ -349,6 +603,12 @@ p {
   display: grid;
   background-color: #f6f6f6;
   padding-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .menu-listes {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+  }
 }
 
 .menu-liste {

@@ -1,6 +1,7 @@
 .plat {
   @include cartemenu;
   @include boxshadow;
+  @include slide-in-bottom;
 
   &-contenu {
     flex: 1;
@@ -49,5 +50,11 @@
   }
   &:hover &-icon {
     transform: rotate(360deg);
+  }
+}
+
+@for $i from 0 to 9 {
+  .position-#{$i} {
+    animation-delay: #{$i/10}s;
   }
 }

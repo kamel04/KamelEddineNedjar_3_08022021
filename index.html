@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="public/img/logo/ohmyfood_icon.png"
+    />
     <title>ohmyfood Accueil</title>
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
@@ -17,6 +21,25 @@
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
   <body>
+    <!--Loader-->
+    <div class="loader">
+      <div class="loader-lettres">
+        <div class="lettre ordre-1">o</div>
+        <div class="lettre ordre-2">h</div>
+        <div class="lettre ordre-3">m</div>
+        <div class="lettre ordre-4">y</div>
+        <div class="lettre ordre-5">f</div>
+        <div class="lettre ordre-6">o</div>
+        <div class="lettre ordre-7">o</div>
+        <div class="lettre ordre-8">d</div>
+      </div>
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
     <!--Entête-->
     <header class="header">
       <h1 class="header-logo">ohmyfood</h1>
@@ -24,22 +47,25 @@
     <main>
       <!--Exploration-->
       <section class="exploration">
-        <!--Localisation-->
-        <div class="localisation">
-          <i class="fas fa-map-marker-alt localisation-icon"></i>
-          <span class="localisation-text">Paris, Belleville</span>
-        </div>
-        <!--Réserver-->
-        <div class="reserver">
-          <h2 class="reserver-titre">
-            Réservez le menu qui
-            <br />
-            vous convient
-          </h2>
-          <p class="reserver-text">
-            Découvrez des restaurents d'exception séléctionnés par nos soins
-          </p>
-          <button class="btn-primaire">Explorer nos restaurents</button>
+        <div class="local-explor">
+          <!--Localisation-->
+          <div class="localisation">
+            <i class="fas fa-map-marker-alt localisation-icon"></i>
+            <span class="localisation-text">Paris, Belleville</span>
+          </div>
+          <!--Réserver-->
+          <div class="reserver">
+            <h2 class="reserver-titre">
+              Réservez le menu qui
+              <br />
+              vous convient
+            </h2>
+            <p class="reserver-text">
+              Découvrez des restaurents d'exception,<br />
+              séléctionnés par nos soins
+            </p>
+            <button class="btn-primaire">Explorer nos restaurents</button>
+          </div>
         </div>
         <!--Fonctionnement-->
         <div class="fonctionnement">
